@@ -1,27 +1,88 @@
-  html,
-        body {
-            width: 100%;
-            height: 100%;
-        }
 
-        html {
-            display: table;
-            font-family: Lato, "Segoe UI", Avenir, Ubuntu, Tahoma, Verdana, Helvetica, sans-serif;
-        }
+:root {
+  --primary-color: #1a1a1a;
+  --accent-color: #e63946;
+  --bg-light: #f8f9fa;
+  --text-color: #212529;
+}
 
-        body {
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center;
-        }
+body {
+  background-color: var(--bg-light);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
 
-        h1 {
-            font-size: 4em;
-            font-weight: normal;
-            text-transform: lowercase;
-        }
+.navbar {
+  background-color: var(--primary-color);
+}
 
-        svg {
-            width: 250px;
-            height: 250px;
-        }
+.navbar-brand, .nav-link {
+  color: #ffffff;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+  color: var(--accent-color);
+}
+
+.section-title {
+  color: var(--accent-color);
+}
+
+.card {
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  color: var(--text-color);
+}
+
+.btn-custom {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #c92c3b;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.footer-icons a {
+  color: #ffffff;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.footer-icons a:hover {
+  color: var(--accent-color);
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--accent-color);
+}
+
+.skill-item {
+  text-align: center;
+}
+
+.skill-item img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+}
