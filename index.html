@@ -7,44 +7,41 @@
     <meta name="description" content="Hiren Gohel | Web Developer Portfolio">
     <meta name="keywords" content="Hiren Gohel, Web Developer, Portfolio, HTML, CSS, JavaScript, React, PHP, MySQL">
     <meta name="robots" content="index, follow">
-    <meta name="google-site-verification" content="your-google-site-verification-code">
     <meta name="theme-color" content="#ffffff">
     <link rel="icon" href="assets/imgs/icon-hg-64.svg" type="image/x-icon">
     <link rel="apple-touch-icon" href="assets/imgs/icon-hg-64.svg">
     <meta name="author" content="Hiren Gohel">
     <title>Hiren Gohel | Web Developer</title>
-    <!-- font icons -->
+    <!-- Font Icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap +  styles -->
+    <!-- Bootstrap & Custom Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Add this line inside your <head> tag -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-    <!-- Page Navbar -->
+    <!-- Visitor Counter (fixed corner) -->
+    <div class="visitor-counter-fixed">
+        <i class="fas fa-eye"></i>
+        <span id="view-count">0</span> Viewers
+    </div>
+
+    <!-- Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#home"> <img src="assets/imgs/icon-hg-64.svg" alt="Hiren Gohel Logo"> Hiren GoheL</a>
+            <a class="logo" href="#">
+                <img src="assets/imgs/icon-hg-64.svg" alt="Hiren Gohel Logo"> Hiren GoheL
+            </a>
             <ul class="nav">
-                <li class="item">
-                    <a class="link" href="#home">Home</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#about">About</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#skills">Skills</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#portfolio">Portfolio</a>
-                </li>
-
-                <li class="item">
-                    <a class="link" href="#contact">Contact</a>
-                </li>
-
+                <li class="item"><a class="link" href="#home">Home</a></li>
+                <li class="item"><a class="link" href="#about">About</a></li>
+                <li class="item"><a class="link" href="#skills">Skills</a></li>
+                <li class="item"><a class="link" href="#education">Education</a></li>
+                <li class="item"><a class="link" href="#experience">Experience</a></li>
+                <li class="item"><a class="link" href="#portfolio">Portfolio</a></li>
+                <li class="item"><a class="link" href="#contact">Contact</a></li>
             </ul>
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
                 <div class="hamburger-box">
@@ -52,31 +49,28 @@
                 </div>
             </a>
         </div>
-    </nav><!-- End of Page Navbar -->
+    </nav>
 
-    <!-- page header -->
+    <!-- Header -->
     <header id="home" class="header">
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
                 <span class="up">HI!</span>
-                <span class="down">I am Hiren Gohel </span>
+                <span class="down">I am Hiren Gohel</span>
             </h1>
             <p class="header-subtitle">
                 <span id="typed-text"></span>
                 <span class="typed-cursor">|</span>
             </p>
-
             <a href="#portfolio" class="btn btn-primary">Visit My Works</a>
             <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
         </div>
-    </header><!-- end of page header -->
+    </header>
 
-    <!-- about section -->
+    <!-- About Section -->
     <section class="section" id="about">
-        <!-- container -->
-        <div class="container  text-center">
-            <!-- about wrapper -->
+        <div class="container text-center">
             <div class="about">
                 <div class="about-img-holder">
                     <img src="assets/imgs/HIREN GOHEL.jpg" class="about-img" alt="my-img" width="300" height="300">
@@ -98,139 +92,89 @@
                     </p>
                     <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
                 </div>
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
-    </section> <!-- end of about section -->
+            </div>
+        </div>
+    </section>
 
-    <!-- service section -->
+    <!-- Skills Section -->
     <section class="section" id="skills">
         <div class="container text-center">
             <p class="section-subtitle">My Expertise</p>
             <h6 class="section-title mb-6">Technical Skills</h6>
-            <!-- row -->
             <div class="row">
-                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="col-6 col-sm-4 col-lg-3 mb-4">
                     <div class="service-card h-100">
                         <div class="body">
-                            <div class="front">
-                                <img src="assets/imgs/html.png" alt="html" class="icon">
-                                <h6 class="title">Html</h6>
-                            </div>
-                            <div class="back d-flex flex-column align-items-center justify-content-center">
-                                <img src="assets/imgs/html.png" alt="html" class="icon mb-2">
-                                <h6 class="title">Html</h6>
-                            </div>
+                            <img src="assets/imgs/html.png" alt="html" class="icon">
+                            <h6 class="title">Html</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="col-6 col-sm-4 col-lg-3 mb-4">
                     <div class="service-card h-100">
                         <div class="body">
-                            <div class="front">
-                                <img src="assets/imgs/css.png" alt="css" class="icon">
-                                <h6 class="title">CSS</h6>
-                            </div>
-                            <div class="back d-flex flex-column align-items-center justify-content-center">
-                                <img src="assets/imgs/css.png" alt="css" class="icon mb-2">
-                                <h6 class="title">CSS</h6>
-                            </div>
+                            <img src="assets/imgs/css.png" alt="css" class="icon">
+                            <h6 class="title">CSS</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="col-6 col-sm-4 col-lg-3 mb-4">
                     <div class="service-card h-100">
                         <div class="body">
-                            <div class="front">
-                                <img src="assets/imgs/javascript.png" alt="javascript" class="icon">
-                                <h6 class="title">JavaScript</h6>
-                            </div>
-                            <div class="back d-flex flex-column align-items-center justify-content-center">
-                                <img src="assets/imgs/javascript.png" alt="javascript" class="icon mb-2">
-                                <h6 class="title">JavaScript</h6>
-                            </div>
+                            <img src="assets/imgs/javascript.png" alt="javascript" class="icon">
+                            <h6 class="title">JavaScript</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="col-6 col-sm-4 col-lg-3 mb-4">
                     <div class="service-card h-100">
                         <div class="body">
-                            <div class="front">
-                                <img src="assets/imgs/react.png" alt="react" class="icon">
-                                <h6 class="title">React</h6>
-                            </div>
-                            <div class="back d-flex flex-column align-items-center justify-content-center">
-                                <img src="assets/imgs/react.png" alt="react" class="icon mb-2">
-                                <h6 class="title">React</h6>
-                            </div>
+                            <img src="assets/imgs/react.png" alt="react" class="icon">
+                            <h6 class="title">React</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="col-6 col-sm-4 col-lg-3 mb-4">
                     <div class="service-card h-100">
                         <div class="body">
-                            <div class="front">
-                                <img src="assets/imgs/bootstrap.png" alt="bootstrap" class="icon">
-                                <h6 class="title">Bootstrap</h6>
-                            </div>
-                            <div class="back d-flex flex-column align-items-center justify-content-center">
-                                <img src="assets/imgs/bootstrap.png" alt="bootstrap" class="icon mb-2">
-                                <h6 class="title">Bootstrap</h6>
-                            </div>
+                            <img src="assets/imgs/bootstrap.png" alt="bootstrap" class="icon">
+                            <h6 class="title">Bootstrap</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="col-6 col-sm-4 col-lg-3 mb-4">
                     <div class="service-card h-100">
                         <div class="body">
-                            <div class="front">
-                                <img src="assets/imgs/php.png" alt="php" class="icon">
-                                <h6 class="title">PHP</h6>
-                            </div>
-                            <div class="back d-flex flex-column align-items-center justify-content-center">
-                                <img src="assets/imgs/php.png" alt="php" class="icon mb-2">
-                                <h6 class="title">PHP</h6>
-                            </div>
+                            <img src="assets/imgs/php.png" alt="php" class="icon">
+                            <h6 class="title">PHP</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="col-6 col-sm-4 col-lg-3 mb-4">
                     <div class="service-card h-100">
                         <div class="body">
-                            <div class="front">
-                                <img src="assets/imgs/mysql.png" alt="mysql" class="icon">
-                                <h6 class="title">MySQL</h6>
-                            </div>
-                            <div class="back d-flex flex-column align-items-center justify-content-center">
-                                <img src="assets/imgs/mysql.png" alt="mysql" class="icon mb-2">
-                                <h6 class="title">MySQL</h6>
-                            </div>
+                            <img src="assets/imgs/mysql.png" alt="mysql" class="icon">
+                            <h6 class="title">MySQL</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="col-6 col-sm-4 col-lg-3 mb-4">
                     <div class="service-card h-100">
                         <div class="body">
-                            <div class="front">
-                                <img src="assets/imgs/github.png" alt="github" class="icon">
-                                <h6 class="title">GitHub</h6>
-                            </div>
-                            <div class="back d-flex flex-column align-items-center justify-content-center">
-                                <img src="assets/imgs/github.png" alt="github" class="icon mb-2">
-                                <h6 class="title">GitHub</h6>
-                            </div>
+                            <img src="assets/imgs/github.png" alt="github" class="icon">
+                            <h6 class="title">GitHub</h6>
                         </div>
                     </div>
                 </div>
             </div>
-    </section><!-- end of service section -->
+        </div>
+    </section>
 
-
-    <!-- Add this section before the portfolio section -->
+    <!-- Education Section -->
     <section class="section" id="education">
         <div class="container text-center">
             <p class="section-subtitle">My Academic Journey</p>
             <h6 class="section-title mb-6">Education</h6>
-            <!-- row -->
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="education-card">
@@ -253,17 +197,38 @@
                         <span class="education-duration">2018 - 2019</span>
                     </div>
                 </div>
-            </div><!-- end of row -->
-        </div><!-- end of container -->
+            </div>
+        </div>
     </section>
-    <!-- end of education section -->
 
-    <!-- portfolio section -->
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container text-center">
+            <p class="section-subtitle">My Professional Journey</p>
+            <h6 class="section-title mb-6">Experience</h6>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-4">
+                    <div class="education-card p-4 shadow rounded">
+                        <h5 class="mb-1" style="color:#695aa6; font-weight:bold;">Web Developer Intern</h5>
+                        <p class="mb-1" style="font-weight:500;">ABC Tech Solutions</p>
+                        <span class="text-muted">Jan 2023 - Jun 2023</span>
+                        <ul style="text-align:left; margin: 1rem 0 0 0; color:#393e46;">
+                            <li>Developed responsive websites using HTML, CSS, JavaScript, and React.</li>
+                            <li>Collaborated with designers and backend developers to deliver client projects.</li>
+                            <li>Maintained and updated existing web applications.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Add more experience blocks as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
     <section class="section" id="portfolio">
         <div class="container text-center">
             <p class="section-subtitle">My Work</p>
             <h6 class="section-title mb-6">Portfolio</h6>
-            <!-- row -->
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <a href="https://www.empirescomputer.in/" class="portfolio-card" target="_blank" rel="noopener">
@@ -301,20 +266,15 @@
                         </span>
                     </a>
                 </div>
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    </section> <!-- end of portfolio section -->
+            </div>
+        </div>
+    </section>
 
-
-
-    <!-- contact section -->
+    <!-- Contact Section -->
     <section class="section" id="contact">
         <div class="container text-center">
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
-            <!-- contact form -->
-
-
             <form id="contactForm" class="contact-form col-md-10 col-lg-8 m-auto">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
@@ -333,11 +293,10 @@
                     </div>
                 </div>
             </form>
-            <!-- end of contact form -->
-        </div><!-- end of container -->
-    </section><!-- end of contact section -->
+        </div>
+    </section>
 
-    <!-- footer -->
+    <!-- Footer -->
     <div class="container">
         <footer class="footer">
             <p class="footer-text mb-0">
@@ -349,7 +308,6 @@
                         HIREN GOHEL
                     </a>
                 </span>
-
                 <br>
                 <span class="footer-rights">All rights reserved.</span>
             </p>
@@ -374,23 +332,20 @@
         </footer>
     </div>
 
-    <!-- end of page footer -->
+    <!-- Visitor Counter Script -->
+    <script>
+        fetch('https://api.countapi.xyz/hit/hirengohelofficial.me/visits')
+            .then(res => res.json())
+            .then(res => {
+                document.getElementById('view-count').textContent = res.value;
+            });
+    </script>
 
-    <!-- core  -->
-
-
-
-
-
+    <!-- Core JS -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- script js -->
-   <script src="assets/js/script.js"></script>
-
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
