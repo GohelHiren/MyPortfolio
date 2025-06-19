@@ -12726,8 +12726,13 @@ p {
 }
 
 .custom-navbar.affix {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.25); /* more transparent */
   border-bottom: 1px solid rgba(222, 226, 230, 0.34);
+  backdrop-filter: blur(18px) saturate(200%);
+  -webkit-backdrop-filter: blur(18px) saturate(200%);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  border-radius: 16px;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
 .custom-navbar.affix .logo {
