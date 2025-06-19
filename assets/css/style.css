@@ -5481,6 +5481,16 @@ input[type="button"].btn-block {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   backdrop-filter: blur(14px) saturate(180%);
+
+  &:hover {
+    box-shadow: 0 8px 32px rgba(105, 90, 166, 0.18);
+    background: linear-gradient(120deg, #f8f9fa 60%, #e1dfed 100%);
+    backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-sizing: border-box;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .card>hr {
